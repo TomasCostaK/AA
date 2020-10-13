@@ -20,7 +20,7 @@ def R4(n):
         return 0
     return 1 + R4(n-1) + R4(n-1)
 
-n = 12
+n = 30
 
 print("Return of R1 correct? " , format( R1(n)==n ))
 print("Return of R2 correct? " , format( R2(n)==sum(i if n % 2 == 0 else i+1 for i in range(0,n+1,2)) ))
